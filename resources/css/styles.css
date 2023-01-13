@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'martinithai_neue_slab';
+  src: url('../fonts/martinithai_neue_slab.woff2') format('woff2'),
+       url('../fonts/martinithai_neue_slab.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+  margin: 0;
+}
+body {
+	font: 1em/1.5 "Open Sans", sans-serif;
+	color: #373737;
+	background: #eaeaea;
+	margin: 0;
+}
+main {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 90%;
+  max-width: 60rem;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+h1 {
+  color: #fff;
+  font-family: 'martinithai_neue_slab', Arial, sans-serif;
+  justify-content: space-around;
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+h2 {
+	font-size: 1.125em;
+	font-weight: 600;
+	margin: 0;
+}
+h3 {
+	font-size: 1.3em;
+	line-height: 1.25em;
+	margin-top: 0.85em;
+	margin-bottom: 0.5em;
+}
+p {
+	font-size: 0.875em;
+	line-height: 1.4;
+	margin: 0 0 1.5em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+header {
+  background-color: #2d3945;
+  text-align: center;
+  align-items: center;
+}
+
+#registration-page {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:none;
+}
+
+.signup-form  {
+  flex:1;
+  background-color: #EFF0F1;
+}  
+
+.divider {
+	height: 9px;
+	border-top: 4px solid black;
+	border-bottom: 2px solid black;
+}
+
+.second-divider {
+  height: 5px;
+  color:#2d3945;
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form label {
+  vertical-align: top;
+}
+
+  
+  [type="submit"] {
+  clear: left;
+  margin: 20px 0 0 230px;
+  font-size:18px
+  }
