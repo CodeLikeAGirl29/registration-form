@@ -4,6 +4,10 @@ This project is the [third project](https://teamtreehouse.com/projects/an-online
 
 In this project, you'll build a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using the supplied mockup files, you'll build a mobile and desktop version of the form using media queries, and a "mobile-first" approach.
 
+  ## Screenshot
+
+  ![screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1674015211/projects/Treehouse-Online-Registration-Form_y4rttw.png)
+
 ## Instructions
 1. Build the layout using __mobile first design__:
 - Make sure the HTML file includes the viewport meta tag in the head of the document, see Configuring the Viewport to understand why and how to add this tag.
