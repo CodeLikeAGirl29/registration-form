@@ -1,8 +1,12 @@
 # Online Registration Form
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a39bae06-e6a0-4717-a2a4-100fe1c0b000/deploy-status)](https://app.netlify.com/sites/my-registration-form23/deploys)
+
 This project is the [third project](https://teamtreehouse.com/projects/an-online-registration-form) for Team Treehouse's Frontend Development course.
 
 In this project, you'll build a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using the supplied mockup files, you'll build a mobile and desktop version of the form using media queries, and a "mobile-first" approach.
+
+> Live link for this project can be found [here](https://my-registration-form23.netlify.app/)
 
   ## Screenshot
 
