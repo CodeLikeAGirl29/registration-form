@@ -57,7 +57,7 @@ legend {
   font-weight: 600;
   color: #353535;
   font-size: 1.4em;
-  	margin-bottom: 25px;
+  margin-bottom: 25px;
   font-family: "Merriweather", serif;
 }
 
@@ -86,9 +86,9 @@ label,
 }
 
 .clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* ================================= 
@@ -170,13 +170,6 @@ main {
   background-color: #fff;
 }
 
-.form-head {
-}
-
-label, input {
-width: 100%;
-}
-
 div.top-section {
   padding: 1em 0;
 }
@@ -227,6 +220,28 @@ legend {
   text-align: center;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #2d3945;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 2px;
+
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 0.7em;
@@ -254,9 +269,8 @@ input::-webkit-input-placeholder {
   font-size: 0.8rem;
 }
 
-.textfield,
-#zip,
-textarea {
+.text,
+#zip {
   background-color: #eee;
   border: none;
   width: 100%;
@@ -316,7 +330,7 @@ select:focus {
 
 .news-option {
   display: inline-block;
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .news-option label,
@@ -324,12 +338,10 @@ select:focus {
   margin: 1em 1rem;
 }
 
+.newsletter,
 input[type="radio"],
 input[type="checkbox"] {
-	margin-right: 10px;
-  text-align: left;
-  flex-direction: column;
-  display: inline-block;
+  margin: 10px 4px 8px 0px;
 }
 
 .news-option input {
@@ -340,25 +352,47 @@ input[type="checkbox"] {
   margin-top: 1em;
 }
 
+.check-input {
+
+	margin:9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+  vertical-align: middle;
+  margin-top:0px; }
+
+
+  .check-input:checked {	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	color: #99a1a7;}
+
+
+.check-input:checked:after {	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	color: #2d3945;
+	top: 0px;
+	left: 0px;
+  width:18px;
+  text-align:center;  
+  border:solid 1.5px #2d3945 ;}
+
+
+
+
 textarea {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.8em;	height: 150px;
+
+  padding: 12px 20px;
 }
 
 .text {
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 .text label,
 .text input {
   display: block;
-}
-
-textarea {
-  width: 100%;
-  margin-top: 2rem;
-  height: 12rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
 }
 
 button {
@@ -388,20 +422,20 @@ button {
 
   .input-section > label {
     margin-right: 1em;
-    padding: .5em 0;
+    padding: 0.5em 0;
   }
 
   .input-section:after {
-  content: '';
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  form input, form select {
-     max-width: 70%;
-     display: inline-block;
-   
-    }
+  form input,
+  form select {
+    max-width: 70%;
+    display: inline-block;
+  }
 
   form label {
     width: 25%;
