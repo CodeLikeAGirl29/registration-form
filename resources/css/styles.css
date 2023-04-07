@@ -17,14 +17,13 @@ body {
 form {
   margin: 10px auto;
   padding: 10px 20px;
-  background-color: #e4e2e247;
 }
 
 .container {
   list-style-type: none;
   width: 92.5%;
   margin: auto;
-  max-width: 760px;
+  max-width: 960px;
 }
 
 header {
@@ -32,18 +31,17 @@ header {
   background-color: #2d3945;
   padding: 1.4em;
   padding: 1.55em 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-/* .main-header,
-.form-head,
-footer {
+h2,
+p {
   text-align: center;
-} */
+}
 
 h1,
 button {
-  margin: 0 0 30px 0;
+  margin: 10px 0 20px 0;
   text-align: center;
   color: #fff;
   font-weight: 600;
@@ -57,7 +55,6 @@ legend {
   font-weight: 600;
   color: #353535;
   font-size: 1.4em;
-  margin-bottom: 25px;
   font-family: "Merriweather", serif;
 }
 
@@ -76,12 +73,17 @@ label,
   margin-top: 25px;
 }
 
-.text:focus,
-#zip:focus,
-#interests:focus {
-  background-color: #eff0f1;
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background-color: ivory;
   outline: none;
-  border-bottom: 4px solid rgba(35, 165, 173, 1);
+  border-bottom: 3px solid rgba(35, 165, 173, 1);
   transition: border-bottom 0.5s 1s, background-color 1s;
 }
 
@@ -160,7 +162,7 @@ select {
 .second-divider {
   height: 2px;
   background-color: #2d3945;
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,7 +219,6 @@ legend {
   font-size: 1.2em;
   color: #1a4e73;
   margin-bottom: 1em;
-  text-align: center;
 }
 
 input[type="text"],
@@ -236,10 +237,9 @@ select {
   width: 100%;
   background-color: #e8eeef;
   color: #2d3945;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
   border-radius: 2px;
-
 }
 
 input[type="checkbox"],
@@ -318,9 +318,10 @@ select:focus {
 }
 
 .nl_text {
-  margin-bottom: 1em;
   text-align: left;
   width: 70%;
+  margin: 10px 0;
+  font-weight: 500;
 }
 
 .newsletter {
@@ -353,35 +354,31 @@ input[type="checkbox"] {
 }
 
 .check-input {
-
-	margin:9px;
-	border-radius: 3px;
-	display: inline-block;
-	position: relative;
+  margin: 9px 0;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
   vertical-align: middle;
-  margin-top:0px; }
+}
 
+.check-input:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  color: #99a1a7;
+}
 
-  .check-input:checked {	background-color: #e9ecee;
-	border: 1px solid #adb8c0;
-	color: #99a1a7;}
-
-
-.check-input:checked:after {	content: '\2714';
-	font-size: 14px;
-	position: absolute;
-	color: #2d3945;
-	top: 0px;
-	left: 0px;
-  width:18px;
-  text-align:center;  
-  border:solid 1.5px #2d3945 ;}
-
-
-
+.check-input:checked:after {
+  position: absolute;
+  color: #2d3945;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  border: solid 1.5px #2d3945;
+}
 
 textarea {
-  margin-bottom: 0.8em;	height: 150px;
+  margin-bottom: 0.8em;
+  height: 150px;
 
   padding: 12px 20px;
 }
@@ -411,13 +408,15 @@ button {
 
 @media (min-width: 768px) {
   form {
-    max-width: 600px;
+    max-width: 700px;
   }
 
-  .input-section {
+  .input-section,
+  .select {
     clear: both;
     padding-top: 20px;
     display: flex;
+    color: lightgrey;
   }
 
   .input-section > label {
@@ -438,7 +437,7 @@ button {
   }
 
   form label {
-    width: 25%;
+    width: 50%;
   }
 
   input[type="text"],
@@ -447,6 +446,13 @@ button {
   input[type="number"],
   input[type="tel"],
   select {
-    width: 380px;
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input {
+    width: 100%;
   }
 }
