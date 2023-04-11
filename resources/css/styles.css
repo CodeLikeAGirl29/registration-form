@@ -1,5 +1,5 @@
 /* ================================= 
-  Base Element Styles
+  Global Styles
 ==================================== */
 
 *,
@@ -36,94 +36,36 @@ form {
   margin-right: auto;
 }
 
-/* 
-
-header {
-  text-transform: uppercase;
-  background-color: #2d3945;
-  padding: 1.4em;
-  padding: 1.55em 0;
-  margin-bottom: 15px;
-}
-
-h2,
-p {
-  text-align: center;
-}
-
-h1,
-button {
-  margin: 10px 0 20px 0;
-  text-align: center;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.4rem;
-  font-family: "Merriweather", serif;
-}
-
-h2,
-h3,
-legend {
-  font-weight: 600;
-  color: #353535;
-  font-size: 1.4em;
-  font-family: "Merriweather", serif;
-}
-
-p,
-label,
-::placeholder {
-  font-size: 1em;
-  font-style: italic;
-  color: #bbb;
-  margin-top: 0;
-  margin-bottom: 2em;
-}
-
-.copyright {
-  color: #d1d4d6;
-  font-size: 0.9rem;
-  margin-top: 25px;
-}
-
-input:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-textarea:focus,
-select:focus {
-  background-color: ivory;
-  outline: none;
-  border-bottom: 3px solid rgba(35, 165, 173, 1);
-  transition: border-bottom 0.5s 1s, background-color 1s;
-} */
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
+
 .main-header,
 .intro,
 .main-footer {
   text-align: center;
 }
+
 .main-header {
   background: #2d3945;
   padding: 1.55em 0;
   margin-bottom: 27px;
 }
+
 .container {
   padding: 0 1em;
 }
+
 .intro {
   padding-bottom: 38px;
   border-bottom: 3.5px solid #2d3945;
 }
+
 .grey-container {
   background: #f4f4f4;
   padding-bottom: 1px;
 }
+
 .main-footer {
   padding: 2px 0 20px;
 }
@@ -136,16 +78,19 @@ select:focus {
   text-transform: uppercase;
   color: #fff;
 }
+
 .headline {
   margin-bottom: 0.55em;
   font-size: 1.15em;
   font-weight: 900;
   color: #2d3945;
 }
+
 .tagline {
   font-weight: 300;
   font-size: 0.9em;
 }
+
 .copyright {
   font-size: 0.875em;
   font-style: italic;
@@ -162,18 +107,21 @@ fieldset {
   padding-bottom: 12px;
   border: none;
 }
+
 legend {
   font-size: 1.15em;
   font-weight: 900;
   color: #2d3945;
   padding: 1.4em 0 1.5em;
 }
+
 label,
 input,
 textarea,
 select {
   display: block;
 }
+
 input,
 textarea,
 select {
@@ -188,23 +136,27 @@ select {
   padding: 17px 20px;
   width: 100%;
 }
+
 label {
   color: #46698b;
   font-weight: 400;
   font-size: 0.875em;
   margin-bottom: 0.9em;
 }
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 50px;
   color: #aab0b5;
 }
+
 textarea {
   margin-top: 16px;
   background: #fff;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
 }
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -212,6 +164,7 @@ select:focus {
   box-shadow: inset 0 0 0 2px #46698b;
   transition: background-color 0.5s;
 }
+
 ::-ms-input-placeholder {
   color: #aab0b5;
   text-align: right;
@@ -219,6 +172,7 @@ select:focus {
   font-weight: 300;
   font-size: 0.85em;
 }
+
 ::placeholder {
   color: #aab0b5;
   text-align: right;
@@ -226,15 +180,20 @@ select:focus {
   font-weight: 300;
   font-size: 0.85em;
 }
+
 #zip_code {
-  width: 150px;
+  max-width: 150px;
+  width: 50%;
 }
+
 .line-height {
   line-height: 1.6;
 }
+
 .newsletter {
   padding-bottom: 1.4em;
 }
+
 input[type="checkbox"],
 input[type="radio"],
 input[type="checkbox"] + label,
@@ -242,22 +201,27 @@ input[type="radio"] + label {
   display: inline-block;
   width: auto;
 }
+
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 1em;
   margin-bottom: 18px;
 }
+
 #html {
   margin-top: 3px;
 }
+
 #javascript,
 #plain_format {
   margin-bottom: 31px;
 }
+
 input[type="checkbox"]:checked {
   background: #489ff9;
   color: #fff;
 }
+
 input[type="submit"] {
   margin-top: 3px;
   padding-top: 20px;
@@ -277,52 +241,67 @@ input[type="submit"] {
     max-width: 600px;
     margin: 0 auto;
   }
+
   .main-header {
     padding-top: 1.54em;
     padding-bottom: 1.54em;
     margin-bottom: 65px;
   }
+  
   .title {
     font-size: 1.2em;
   }
+  
   .intro {
     padding-bottom: 44px;
   }
+
   .headline {
     font-size: 1.5em;
   }
+
   fieldset {
     padding-bottom: 24px;
   }
+
   legend {
     padding-top: 2.49em;
   }
+
   .row {
     display: flex;
     align-items: center;
   }
+
   label {
     flex-basis: 25%;
   }
+
   input,
   textarea,
   select {
     flex: 1 75%;
     margin-bottom: 1.35em;
   }
+
   #zip_code {
     flex-grow: 0;
     flex-basis: 150px;
+    width: 25%;
   }
+
   .newsletter {
     padding-top: 2.6em;
   }
+
   textarea {
     margin-bottom: 8px;
   }
+
   input[type="submit"] {
     margin-top: 0;
   }
+
   .main-footer {
     padding-top: 10px;
   }
