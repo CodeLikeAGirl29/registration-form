@@ -10,7 +10,7 @@ In this project, you'll build a responsive, mobile-friendly registration form us
 
   ## Screenshot
 
-  ![screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1674015211/projects/Treehouse-Online-Registration-Form_y4rttw.png)
+  ![screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1681316430/projects/Treehouse-Online-Registration-Form_kpmvov.pngg)
 
 ## Instructions
 1. Build the layout using __mobile first design__:
