@@ -31,7 +31,7 @@ form {
 .second-divider {
   height: 2px;
   background-color: #2d3945;
-  width: 40%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,7 +62,6 @@ form {
 }
 
 .grey-container {
-  background: #f4f4f4;
   padding-bottom: 1px;
 }
 
