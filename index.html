@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Treehouse Online Registration Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="resources/css/normalize.css" />
-  <link rel="stylesheet" href="resources/css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/styles.css">
 </head>
 
 <body>
@@ -28,43 +28,33 @@
   </div>
   <!-- Form-Section -->
   <main>
-
     <form action="index.html" method="post" class="n-form">
-
       <div class="container">
-        <hr class="divider" />
+        <hr class="divider">
         <fieldset>
           <legend>Contact Information</legend>
           <div class="row">
             <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" placeholder="Required" name="fullName" required />
+            <input type="text" id="fullName" placeholder="Required" name="fullName" required>
           </div>
-
           <div class="row">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Required" name="email" required />
+            <input type="email" id="email" placeholder="Required" name="email" required>
           </div>
           <div class="row">
             <label for="phone">Phone Number</label>
-
-            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
           </div>
-
           <div class="row">
             <label for="address">Street Address</label>
-
-            <input type="text" name="address" id="address" placeholder="Street Address" />
+            <input type="text" name="address" id="address" placeholder="Street Address">
           </div>
-
           <div class="row">
             <label for="city">City</label>
-
-            <input type="text" id="city" name="city" placeholder="City" />
+            <input type="text" id="city" name="city" placeholder="City">
           </div>
-
           <div class="row">
             <label for="state">State</label>
-
             <select id="state" name="state">
               <option value="select">Choose State</option>
               <option value="AL">Alabama</option>
@@ -120,52 +110,38 @@
               <option value="WY">Wyoming</option>
             </select>
           </div>
-
           <div class="row">
-            <label for="zip">Zip Code</label>
-
-            <input type="number" id="zip_code" name="zip" pattern="[0-9]*" placeholder="Required" required />
+            <label for="zip_code">Zip Code</label>
+            <input type="text" id="zip_code" name="zip" pattern="[0-9]*" placeholder="Required" required>
           </div>
-
         </fieldset>
       </div>
-
-      <hr class="second-divider" />
-
+      <hr class="second-divider">
       <div class="grey-container">
         <div class="container">
           <fieldset>
             <legend class="newsletter">Newsletter</legend>
             <label class="line-height">Select the newsletter you would like to receive</label>
-
-            <input type="checkbox" id="html" value="html_news" name="user_news" class="check-input" checked />
+            <input type="checkbox" id="html" value="html_news" name="user_news" class="check-input" checked>
             <label for="html" class="check">HTML News</label><br>
-
-            <input type="checkbox" id="css" value="css_news" name="user_news" class="check-input" />
+            <input type="checkbox" id="css" value="css_news" name="user_news" class="check-input">
             <label for="css" class="check">CSS News</label><br>
-
-            <input type="checkbox" id="js" value="js_news" name="user_news" class="check-input" />
+            <input type="checkbox" id="js" value="js_news" name="user_news" class="check-input">
             <label for="js" class="check">JavaScript News</label><br>
-
             <label>Newsletter format</label>
-            <input type="radio" id="html_form" value="html_form" name="user_nlformat" class="radio-input" checked />
+            <input type="radio" id="html_form" value="html_form" name="user_nlformat" class="radio-input" checked>
             <label for="html_form" class="radio">HTML</label><br>
-            <input type="radio" id="plain" value="plain" name="user_nlformat" class="radio-input" />
+            <input type="radio" id="plain" value="plain" name="user_nlformat" class="radio-input">
             <label for="plain" class="radio">Plain text</label>
-
             <label for="user_feedback" class="line-height">Other topics you'd like to hear about</label>
             <textarea id="user_feedback" name="user_interests"
               placeholder="We're all about coding! So what would you like?" rows="6"></textarea>
           </fieldset>
           <input type="submit" value="Sign Up">
         </div>
-
       </div>
-
     </form>
-
   </main>
-
   <footer class="main-footer">
     <span class="copyright">Copyright The Code Review</span>
   </footer>
